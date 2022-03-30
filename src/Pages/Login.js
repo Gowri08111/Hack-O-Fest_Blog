@@ -1,27 +1,27 @@
 import React from "react";
-//import icon from './icon.jpg';
 import '../Styles/Login.css';
-//import Styles from "./Styles/Login.css";
+import { Link } from 'react-router-dom';
+//import GoogleLogin from 'react-google-login';
 const Login=()=>{
     return (
       <body>
         <div className="Loginbox">
           <h1>Login here</h1>
           <form>
-            <p> Username</p>
-            <input type="text" name="" placeholder="Enter Username"/>
+            <p> Email</p>
+            <input type="email" name="" placeholder="Enter Email"/>
             <p>Password</p>
             <input type="password" name="" placeholder="Enter Password"/>
             <input type="submit" name="" value="Log in"/>
             <a href="#">Forgot Password?</a><br/>
-            <a href="#">Don't have an Account?</a>
-
+            <Link to="/signup">Don't Have an Account?</Link>
+            
     
           </form>
         </div>
 
-      </body>
-    
+      </body>    
+     
 
     );
 };
